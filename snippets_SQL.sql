@@ -32,3 +32,11 @@ SET @CORRIGE = (SELECT  NombreCampo FROM  NombreTabla)
 UPDATE NombreTabla
 SET NombreCampo = REPLACE(NombreCampo,SUBSTRING(NombreCampo,PATINDEX('%['+@Caracteres+']%',NombreCampo),1),'')
 WHERE NombreCampo LIKE '%['+@Caracteres+']%'
+
+/********************INSERT**************/
+
+
+INSERT INTO NombreNuevaTabla
+SELECT 
+Campos....
+FROM TablaOrigen
