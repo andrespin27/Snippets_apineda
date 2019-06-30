@@ -1,0 +1,9 @@
+  // va dentro de la etiqueta configuration y antes del sistem.web  esta es para WebForms
+  
+  <connectionStrings>
+    <add name="DefaultConnection" connectionString="Data source=172.23.10.171; initial catalog=P6_Integra2;user id=Aplicacion;pwd=Aplicacion; "  providerName="System.Data.SqlClient"/>
+  </connectionStrings>
+  
+  // Esta es para Aplicaciones .Net Core
+  
+  

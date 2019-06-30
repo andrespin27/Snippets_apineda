@@ -1,0 +1,45 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Configuration;
+using System.Data;
+using System.Data.SqlClient;
+
+
+namespace PrimaveraClient.WebClass
+{
+    public class CSQL
+    {
+        private string stringconection { set; get; }
+        
+
+
+        public CSQL()
+        {
+            stringconection = ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString;
+
+        }
+		//Ejemplo de como utilizar la cadena de conexion
+		
+		public bool EliminarRegistrosTablaSQL(String Query)
+        {
+            bool res = true;
+            try
+            {
+                using (SqlConnection con = new SqlConnection(stringconection))
+                {
+                    con.Open();
+                    SqlCommand command = new SqlCommand(Query, con);
+                    command.ExecuteNonQuery();
+                    con.Close();
+                }
+            }
+            catch(Exception ex)
+            {
+                String Error = ex.Message;
+                res = false;
+            }
+            return res;
+        }
+	}
+}	
