@@ -6,4 +6,16 @@
   
   // Esta es para Aplicaciones .Net Core
   
+ {
+	  "ConnectionStrings": {
+		"DefaultConnection": "Server= 10.19.2.195\sqlexpress;Database=MyDatabase; User Id=sa; Password = Auto2012Gas; Provider= System.Data.SqlClient"
+	  },
+	  "Logging": {
+		"LogLevel": {
+		  "Default": "Warning"
+		}
+	  },
+	  "AllowedHosts": "*"
+ }
+  
   
