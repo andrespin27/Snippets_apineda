@@ -8,7 +8,7 @@
   
  {
 	  "ConnectionStrings": {
-		"DefaultConnection": "Server= 10.1.2.1\Instancia;Database=MyDatabase; User Id=MyUser; Password = 123456; Provider= System.Data.SqlClient"
+		"DefaultConnection": "Server= 10.1.2.1\Instancia;Database=MyDatabase; User Id=MyUser; Password =123456"
 	  },
 	  "Logging": {
 		"LogLevel": {
